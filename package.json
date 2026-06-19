@@ -1,0 +1,12 @@
+{
+  "name": "fmtc-ppt-generator",
+  "version": "1.0.0",
+  "description": "FMTC組込技術グループ討論用PPTジェネレーター",
+  "main": "generate_simple_md_ppt.js",
+  "scripts": {
+    "generate": "node generate_simple_md_ppt.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}

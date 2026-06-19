@@ -1,0 +1,6 @@
+node_modules/
+*.pptx
+*.pdf
+output_simple/
+qa_*/
+package-lock.json
