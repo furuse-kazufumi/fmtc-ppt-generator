@@ -2,7 +2,7 @@
 
 ## 使い方
 
-新しいセッションを開いたら、以下をそのまま貼り付けて `No.X` の番号だけ書き換える。
+新しいセッションを開いたら、以下をそのまま貼り付けて `No.X` と `noXX` の番号だけ書き換える。
 
 ---
 
@@ -12,13 +12,17 @@
 以下の手順でPPT生成まで自動実行してください。
 
 ## セットアップ
-gh repo clone furuse-kazufumi/fmtc-ppt-generator
-cd fmtc-ppt-generator && npm install pptxgenjs
+mkdir -p /home/user/workspace/fmtc-ppt/examples /home/user/workspace/fmtc-ppt/output_simple
+cd /home/user/workspace/fmtc-ppt
+curl -sO https://raw.githubusercontent.com/furuse-kazufumi/fmtc-ppt-generator/main/generate_simple_md_ppt.js
+curl -sO https://raw.githubusercontent.com/furuse-kazufumi/fmtc-ppt-generator/main/HOWTO.md
+curl -s https://raw.githubusercontent.com/furuse-kazufumi/fmtc-ppt-generator/main/examples/No01_poc_discussion.md -o examples/No01_poc_discussion.md
+npm install pptxgenjs
 
 ## 作成対象
 - このSpaceのインストラクションに記載されたNo.Xの内容を参照
+- HOWTO.md のフォーマットルールに従う
 - examples/No01_poc_discussion.md を構成の参考にする
-- README.md のフォーマットルールに従う
 
 ## 出力
 - Markdown: noXX_poc_discussion.md
